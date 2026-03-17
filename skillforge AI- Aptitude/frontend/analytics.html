@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics - SkillForge AI</title>
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="app-body">
+    <nav class="app-navbar">
+        <div class="logo">SkillForge AI</div>
+        <div class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="analytics.html" class="active">Analytics</a>
+        </div>
+    </nav>
+
+    <main class="analytics-container">
+        <header class="dashboard-header">
+            <h2>Cognitive Analytics</h2>
+            <p>Deep dive into your learning patterns and improvement progression.</p>
+        </header>
+
+        <div class="charts-grid">
+            <div class="chart-card">
+                <h3>Accuracy Trend</h3>
+                <canvas id="accuracyChart"></canvas>
+            </div>
+            
+            <div class="chart-card">
+                <h3>Response Speed Over Time</h3>
+                <canvas id="speedChart"></canvas>
+            </div>
+
+            <div class="chart-card full-width">
+                <h3>Topic Mastery Breakdown</h3>
+                <canvas id="topicMasteryChart"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/analytics.js"></script>
+    <script src="/js/chatbot.js"></script>
+</body>
+</html>
